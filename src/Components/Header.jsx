@@ -71,17 +71,27 @@ const Header = () => {
       <div onClick={handleNav} className="block md:hidden m-4">
         {showNav ? <MdClose size={30} /> : <RiMenu3Line size={30} />}
       </div>
+
       <div
         className={
           showNav
-            ? "fixed left-0 top-0 sm:w-[50%] w-[60%] h-full  bg-black ease-in-out duration-500 md:hidden"
-            : "fixed left-[-100%]"
+            ? "fixed left-0 top-0 sm:w-[50%] w-[100%] h-full bg-black ease-in-out duration-200 md:hidden"
+            : "fixed left-[-100%] top-0  h-full bg-black ease-in-out duration-200 md:hidden"
         }
       >
-        <h1 className="font-bold text-white mt-8 pl-4 text-xl">
-          Muthukumaran.
-        </h1>
-        <ul className="pt-8 uppercase p-4 text-white ">
+        <div className="flex justify-between">
+          <h1 className="font-bold text-white mt-8 pl-4 text-xl">
+            Muthukumaran.
+          </h1>
+          <div
+            onClick={handleNav}
+            className="absolute right-0 top-[14px] md:hidden m-4 "
+          >
+            {showNav ? <MdClose size={30} /> : ""}
+          </div>
+        </div>
+
+        <ul className="pt-8 uppercase p-4 text-white flex flex-col items-center">
           <li className="pb-4">
             <Link
               to={"/"}
@@ -89,6 +99,7 @@ const Header = () => {
                 pathname === "/" &&
                 "font-bold text-orange-700 border-b-2 border-green-600"
               } hover:text-red-700 transition-all`}
+              onClick={handleNav}
             >
               Home
             </Link>
@@ -100,6 +111,7 @@ const Header = () => {
                 pathname === "/about" &&
                 "font-bold text-orange-700 border-b-2 border-green-600"
               } hover:text-red-700 transition-all`}
+              onClick={handleNav}
             >
               About
             </Link>
@@ -111,6 +123,7 @@ const Header = () => {
                 pathname === "/resume" &&
                 "font-bold text-orange-700 border-b-2 border-green-600"
               } hover:text-red-700 transition-all`}
+              onClick={handleNav}
             >
               Resume
             </Link>
@@ -122,6 +135,7 @@ const Header = () => {
                 pathname === "/project" &&
                 "font-bold text-orange-700 border-b-2 border-green-600"
               } hover:text-red-700 transition-all`}
+              onClick={handleNav}
             >
               Project
             </Link>
@@ -133,6 +147,7 @@ const Header = () => {
                 pathname === "/contact" &&
                 "font-bold text-orange-700 border-b-2 border-green-600"
               } hover:text-red-700 transition-all`}
+              onClick={handleNav}
             >
               Contact
             </Link>
