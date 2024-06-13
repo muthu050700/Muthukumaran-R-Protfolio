@@ -68,8 +68,8 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-      <div onClick={handleNav} className="block md:hidden">
-        {showNav ? <MdClose size={25} /> : <RiMenu3Line size={25} />}
+      <div onClick={handleNav} className="block md:hidden m-4">
+        {showNav ? <MdClose size={30} /> : <RiMenu3Line size={30} />}
       </div>
       <div
         className={
