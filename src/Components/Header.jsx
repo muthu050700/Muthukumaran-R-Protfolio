@@ -96,7 +96,7 @@ const Header = () => {
           </div>
         </div>
 
-        <ul className="pt-8 uppercase p-4 text-white flex flex-col items-center">
+        <ul className="pt-12 gap-8 uppercase p-4 text-white flex flex-col items-center">
           <li className="pb-4">
             <Link
               to={"/"}

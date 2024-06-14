@@ -8,18 +8,25 @@ const Home = () => {
         <p className="font-bold text-lg md:text-3xl pb-5 animate__animated animate__fadeInDown animate__delay-1s">
           Software Developer
         </p>
-        <h2 className=" text-4xl md:text-7xl font-bold pb-5 animate__animated  animate__fadeInDown  animate__delay-1s">
+        <h2
+          className=" text-4xl 
+        lg:text-7xl md:text-5xl font-bold pb-5 animate__animated  animate__fadeInDown  animate__delay-1s"
+        >
           Hello{" "}
           <p className="animate__animated animate__headShake animate__delay-2s inline-block text-6xl animate__infinite">
             👋
           </p>{" "}
           I'm <br />
-          <span className="md:text-7xl text-4xl pt-3">Muthukumaran R</span>
+          <span className="lg:text-7xl md:text-5xl text-4xl pt-3">
+            Muthukumaran R
+          </span>
         </h2>
         <div className="flex pb-5 animate__animated  animate__fadeInDown  animate__delay-1s">
-          <p className="font-bold text-[18px] md:text-4xl">And I'm a</p>
+          <p className="font-bold text-[18px] lg:text-4xl md:text-2xl">
+            And I'm a
+          </p>
           <ReactTyped
-            className="pl-2 font-bold md:text-4xl text-[18px]"
+            className="pl-2 font-bold lg:text-4xl md:text-2xl text-[18px]"
             strings={["Front-end Developer.", "React Js Developer."]}
             typeSpeed={40}
             backSpeed={50}
