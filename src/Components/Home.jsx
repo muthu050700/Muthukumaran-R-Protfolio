@@ -1,28 +1,38 @@
 import { ReactTyped } from "react-typed";
+import { Fade } from "react-awesome-reveal";
 const Home = () => {
   return (
     <div className=" text-white flex flex-col justify-between items-center md:flex-row md:mt-36 max-w-[1224px] mx-auto px-4 mt-8">
-      <div>
-        <p className="font-bold text-lg md:text-2xl pb-5">Software Developer</p>
-        <h2 className=" text-4xl md:text-5xl font-bold pb-5">
-          Hello 👋 I'm <br />
-          <span className="md:text-6xl text-4xl">Muthukumaran R</span>
+      {/* <Fade direction="left" delay={1} duration={2000} className=" "> */}
+      <div className="flex flex-col md:gap-6">
+        <p className="font-bold text-lg md:text-3xl pb-5 animate__animated animate__fadeInDown animate__delay-1s">
+          Software Developer
+        </p>
+        <h2 className=" text-4xl md:text-7xl font-bold pb-5 animate__animated  animate__fadeInDown  animate__delay-1s">
+          Hello{" "}
+          <p className="animate__animated animate__headShake animate__delay-2s inline-block text-6xl animate__infinite">
+            👋
+          </p>{" "}
+          I'm <br />
+          <span className="md:text-7xl text-4xl pt-3">Muthukumaran R</span>
         </h2>
-        <div className="flex pb-5">
-          <p className="font-bold text-[18px] md:text-3xl">And I'm a</p>
+        <div className="flex pb-5 animate__animated  animate__fadeInDown  animate__delay-1s">
+          <p className="font-bold text-[18px] md:text-4xl">And I'm a</p>
           <ReactTyped
-            className="pl-2 font-bold md:text-3xl text-[18px]"
-            strings={["Front-end Developer", "React Js Developer"]}
+            className="pl-2 font-bold md:text-4xl text-[18px]"
+            strings={["Front-end Developer.", "React Js Developer."]}
             typeSpeed={40}
             backSpeed={50}
             loop
           />
         </div>
       </div>
-
-      <div className=" blob mt-6">
-        {/* <img src="./assets/profile-img.jpeg" alt="img" className="" /> */}
-      </div>
+      {/* </Fade> */}
+      <Fade direction="right" delay={1000} duration={1000}>
+        <div className=" blob mt-6">
+          {/* <img src="./assets/profile-img.jpeg" alt="img" className="" /> */}
+        </div>
+      </Fade>
     </div>
   );
 };
