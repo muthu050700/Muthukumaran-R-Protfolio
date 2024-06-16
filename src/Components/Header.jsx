@@ -11,7 +11,9 @@ const Header = () => {
   return (
     <div className=" h-24 flex justify-between items-center text-white w-full max-w-[1224px] mx-auto  ">
       <div className="animate__animated animate__fadeInDown animate__delay-1s h-24 flex justify-between items-center text-white w-full max-w-[1224px] mx-auto">
-        <h1 className="font-bold text-xl px-3 md:text-2xl">Muthukumaran.</h1>
+        <h1 className="font-bold text-xl px-3 md:text-2xl ml-6">
+          Muthukumaran.
+        </h1>
         <ul className="md:flex gap-8 hidden px-4">
           <li>
             <Link
@@ -72,7 +74,7 @@ const Header = () => {
       </div>
       <div
         onClick={handleNav}
-        className="block md:hidden m-4 animate__animated animate__fadeInDown animate__delay-1s"
+        className="block md:hidden m-4 animate__animated animate__fadeInDown animate__delay-1s mr-6"
       >
         {showNav ? <MdClose size={30} /> : <RiMenu3Line size={30} />}
       </div>

@@ -21,17 +21,17 @@ const Home = () => {
             Muthukumaran R
           </span>
         </h2>
-        <div className="flex pb-5 animate__animated  animate__fadeInDown  animate__delay-1s">
+        <div className=" pb-5 animate__animated  animate__fadeInDown  animate__delay-1s">
           <p className="font-bold text-[18px] lg:text-4xl md:text-2xl">
-            And I'm a
+            And I'm a{" "}
+            <ReactTyped
+              className="pl-2 font-bold lg:text-4xl md:text-2xl text-[18px]"
+              strings={["Front-end Developer.", "React Js Developer."]}
+              typeSpeed={40}
+              backSpeed={50}
+              loop
+            />
           </p>
-          <ReactTyped
-            className="pl-2 font-bold lg:text-4xl md:text-2xl text-[18px]"
-            strings={["Front-end Developer.", "React Js Developer."]}
-            typeSpeed={40}
-            backSpeed={50}
-            loop
-          />
         </div>
       </div>
       {/* </Fade> */}
