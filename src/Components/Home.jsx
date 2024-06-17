@@ -2,7 +2,7 @@ import { ReactTyped } from "react-typed";
 import { Fade } from "react-awesome-reveal";
 const Home = () => {
   return (
-    <div className="text-white flex flex-col md:justify-between items-center md:flex-row md:mt-4 max-w-[1224px] mx-auto px-4  h-screen">
+    <div className="text-white flex flex-col md:justify-between items-center md:flex-row md:mt-4 max-w-[1224px] mx-auto px-4   md:h-screen">
       {/* <Fade direction="left" delay={1} duration={2000} className=" "> */}
       <div className="flex flex-col flex-1 md:gap-6 justify-center">
         <p className="font-bold items-start text-lg md:text-3xl animate__animated animate__fadeInDown animate__delay-1s">
