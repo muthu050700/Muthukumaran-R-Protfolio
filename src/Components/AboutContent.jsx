@@ -1,6 +1,6 @@
 import AboutMe from "./AboutMe";
 import Icons from "./Icons";
-
+import { profileImage } from "../utils.js/image";
 const AboutContent = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const AboutContent = () => {
         <div>
           <div>
             <img
-              src="./assets/profile-img.jpeg"
+              src={profileImage}
               alt="img"
               className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-lg "
             />
