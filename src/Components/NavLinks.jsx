@@ -5,7 +5,7 @@ const NavLinks = ({ pathname, desktop }) => {
       <ul
         className={`${
           desktop
-            ? "md:flex gap-8 hidden mr-2"
+            ? "md:flex gap-8 hidden mr-2 "
             : "pt-12 gap-8 uppercase p-4 text-white flex flex-col items-center"
         }`}
       >

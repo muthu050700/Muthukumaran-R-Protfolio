@@ -19,5 +19,12 @@ Currently, two official plugins are available:
   - NavLinks component
 
 - Home Component
+
   - left side content
   - Right side profile img
+
+- About Component
+  - left profile image
+    - Social Icons
+  - Right side content
+    -Download CV Button
