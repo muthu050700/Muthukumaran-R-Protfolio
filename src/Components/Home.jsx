@@ -88,7 +88,7 @@ const Home = () => {
     //   {/* </Fade> */}
     // </div>
     <>
-      <div className=" bg-white text-black mt-[178px] h-[100vh] container mx-auto flex flex-col justify-center gap-10 md:flex-row md:items-center ">
+      <div className=" bg-white text-black h-[100vh] container mx-auto flex flex-col justify-center gap-10 md:flex-row md:items-center ">
         {/* Left side content */}
         <div className="flex flex-col ml-2 gap-2 md:flex-1 lg:gap-5">
           <p className="font-bold text-2xl md:text-3xl lg:text-5xl">
