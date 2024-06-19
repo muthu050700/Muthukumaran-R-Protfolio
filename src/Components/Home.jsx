@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 const Home = () => {
   return (
     <>
-      <div className=" bg-white text-black h-screen container mx-auto flex flex-col justify-center gap-10 lg:flex-row md:items-center ">
+      <div className=" bg-white text-black h-[100vh] container mx-auto flex flex-col justify-center gap-10 lg:flex-row md:items-center ">
         {/* Left side content */}
         <div className="flex flex-col ml-2 gap-2 lg:flex-1 lg:gap-5  lg:pl-20">
           <p className="font-bold text-2xl md:text-3xl lg:text-4xl">
