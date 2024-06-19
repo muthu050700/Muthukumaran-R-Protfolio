@@ -11,7 +11,7 @@ const Header = () => {
   };
   const { pathname } = useLocation();
   return (
-    <div className=" fixed z-10 bg-black h-[13vh] md:h-[11vh] lg:h-[10vh] xl:h-[9vh] flex justify-between items-center text-white w-full  mx-auto top-0  ">
+    <div className=" fixed z-10 bg-black h-[78px] flex justify-between items-center text-white w-full  mx-auto top-0  ">
       {/* Desktop Navbar */}
       <div className="h-24 flex justify-between items-center text-white w-full container mx-auto">
         <h1 className="font-bold text-xl md:text-2xl ml-2">Muthukumaran.</h1>
