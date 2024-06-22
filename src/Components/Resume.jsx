@@ -27,9 +27,9 @@ const Resume = () => {
     setEducation(false);
   };
   return (
-    <div className=" bg-zinc-900 text-white flex flex-col md:flex-row gap-10 lg:gap-20 md:px-10 container mx-auto py-20 lg:px-20">
-      <div className="flex flex-col pb-10 ">
-        <div className="flex flex-col justify-center items-center md:items-start gap-6">
+    <div className=" bg-zinc-900 md:h-screen md:justify-center md:items-center mt-[77px] text-white flex flex-col md:flex-row gap-10 lg:gap-20 md:px-10 container mx-auto py-20 lg:px-20">
+      <div className="flex flex-col ">
+        <div className="flex flex-col justify-center items-center md:items-start gap-7">
           <h1 className="text-3xl font-bold ">Why Hire Me?</h1>
           <p className="text-justify text-lg leading-7 px-2 md:px-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi,
@@ -79,38 +79,41 @@ const Resume = () => {
         )}
         {education && (
           <div className="flex flex-col justify-center items-center md:items-start gap-7 ">
-            <h1 className="text-2xl font-bold ">Education</h1>
+            <h1 className="text-3xl font-bold ">Education</h1>
             <p className="text-justify text-lg leading-7 px-2 md:px-0">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Laboriosam illo eveniet nostrum minus et qui dolorum optio quo
               facere assumenda numquam aperiam, atque cum corporis. Sunt ratione
               excepturi quam obcaecati.
             </p>
-            <div className="flex flex-col gap-4 justify-center">
-              <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[300px] h-[170px] gap-4 hover:scale-105 duration-300">
-                <p className="font-medium text-sm">2023 - 2024 (6 Months)</p>
-                <p className="font-bold text-xl text-center">
-                  Front-End Developer
-                </p>
-                <p className="font-medium text-sm text-center">GUVI</p>
-              </div>
-              <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[300px] h-[170px] gap-4 hover:scale-105 duration-300">
-                <p className="font-medium text-sm">2018 - 2022</p>
-                <p className="font-bold text-xl text-center">
-                  Computer Science Engineering
-                </p>
-                <p className="font-medium text-sm text-center">
-                  Rajalakshmi Institute Of Technology.
-                </p>
-              </div>
-              <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[300px] h-[170px] gap-4 hover:scale-105 duration-300">
-                <p className="font-medium text-sm">2017 - 2018</p>
-                <p className="font-bold text-xl text-center">
-                  Computer Science
-                </p>
-                <p className="font-medium text-sm text-center">
-                  Calavala Cunnan Chetty's Hindu Matric HR.SEC.SCHOOL
-                </p>
+
+            <div className=" flex flex-col gap-4 justify-center h-[200px] md:w-[400px]">
+              <div className="  overflow-y-scroll scrollbar-thin scrollbar-webkit">
+                <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[300px] h-[170px] gap-4 ">
+                  <p className="font-medium text-sm">2023 - 2024 (6 Months)</p>
+                  <p className="font-bold text-xl text-center">
+                    Front-End Developer
+                  </p>
+                  <p className="font-medium text-sm text-center">GUVI</p>
+                </div>
+                <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[300px] h-[170px] gap-4 ">
+                  <p className="font-medium text-sm">2018 - 2022</p>
+                  <p className="font-bold text-xl text-center">
+                    Computer Science Engineering
+                  </p>
+                  <p className="font-medium text-sm text-center">
+                    Rajalakshmi Institute Of Technology.
+                  </p>
+                </div>
+                <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[300px] h-[170px] gap-4 ">
+                  <p className="font-medium text-sm">2017 - 2018</p>
+                  <p className="font-bold text-xl text-center">
+                    Computer Science
+                  </p>
+                  <p className="font-medium text-sm text-center">
+                    Calavala Cunnan Chetty's Hindu Matric HR.SEC.SCHOOL
+                  </p>
+                </div>
               </div>
             </div>
           </div>
