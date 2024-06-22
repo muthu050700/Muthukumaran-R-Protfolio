@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-const NavLinks = ({ pathname, desktop }) => {
+const NavLinks = ({ pathname, desktop, showNav, handleNav }) => {
   return (
     <div>
       <ul
@@ -16,6 +16,7 @@ const NavLinks = ({ pathname, desktop }) => {
               pathname === "/" &&
               "font-bold text-orange-700 border-b-2 border-green-600"
             } hover:text-red-700 transition-all`}
+            onClick={handleNav}
           >
             Home
           </Link>
@@ -27,6 +28,7 @@ const NavLinks = ({ pathname, desktop }) => {
               pathname === "/about" &&
               "font-bold text-orange-700 border-b-2 border-green-600"
             } hover:text-red-700 transition-all`}
+            onClick={handleNav}
           >
             About
           </Link>
@@ -38,6 +40,7 @@ const NavLinks = ({ pathname, desktop }) => {
               pathname === "/resume" &&
               "font-bold text-orange-700 border-b-2 border-green-600"
             } hover:text-red-700 transition-all`}
+            onClick={handleNav}
           >
             Resume
           </Link>
@@ -49,6 +52,7 @@ const NavLinks = ({ pathname, desktop }) => {
               pathname === "/project" &&
               "font-bold text-orange-700 border-b-2 border-green-600"
             } hover:text-red-700 transition-all`}
+            onClick={handleNav}
           >
             Project
           </Link>
@@ -60,6 +64,7 @@ const NavLinks = ({ pathname, desktop }) => {
               pathname === "/contact" &&
               "font-bold text-orange-700 border-b-2 border-green-600"
             } hover:text-red-700 transition-all`}
+            onClick={handleNav}
           >
             Contact
           </Link>

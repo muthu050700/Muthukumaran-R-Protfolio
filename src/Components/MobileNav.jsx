@@ -16,7 +16,12 @@ const MobileNav = (props) => {
           </h1>
         </div>
         {/* NavLinks */}
-        <NavLinks pathname={pathname} desktop={false} />
+        <NavLinks
+          pathname={pathname}
+          desktop={false}
+          showNav={showNav}
+          handleNav={handleNav}
+        />
       </div>
     </>
   );
