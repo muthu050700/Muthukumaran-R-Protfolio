@@ -10,7 +10,7 @@ const AboutContent = () => {
             <img
               src={profileImage}
               alt="img"
-              className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-lg "
+              className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-lg object-fit"
             />
           </div>
           <div className="xl:hidden">

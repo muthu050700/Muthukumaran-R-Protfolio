@@ -8,7 +8,7 @@ module.exports = {
       const newUtilities = {
         ".scrollbar-thin": {
           scrollbarWidth: "thin",
-          scrollbarColor: "rgb(31 29 29) white",
+          scrollbarColor: "white",
         },
         "scrollbar-webkit": {
           "&::-webkit-scrollbar": {
@@ -17,11 +17,10 @@ module.exports = {
           "&::-webkit-scrollbar-track": {
             background: "white",
           },
-          "&::-webkit-scrollbar-thumb": {
-            backgroundColor: "rgb(31 41 55)",
-            borderRadius: "20px",
-            border: "1px solid white",
-          },
+          // "&::-webkit-scrollbar-thumb": {
+          //   backgroundColor: "white",
+          //   borderRadius: "20px",
+          // },
         },
       };
       addUtilities(newUtilities, ["responsive", "hover"]);

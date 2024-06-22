@@ -88,15 +88,15 @@ const Resume = () => {
             </p>
 
             <div className=" flex flex-col gap-4 justify-center h-[200px] md:w-[400px]">
-              <div className="  overflow-y-scroll scrollbar-thin scrollbar-webkit">
-                <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[300px] h-[170px] gap-4 ">
+              <div className="scroll h-36 overflow-y-auto">
+                <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[250px] h-[170px] gap-4 ">
                   <p className="font-medium text-sm">2023 - 2024 (6 Months)</p>
                   <p className="font-bold text-xl text-center">
                     Front-End Developer
                   </p>
                   <p className="font-medium text-sm text-center">GUVI</p>
                 </div>
-                <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[300px] h-[170px] gap-4 ">
+                <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[250px] h-[170px] gap-4 ">
                   <p className="font-medium text-sm">2018 - 2022</p>
                   <p className="font-bold text-xl text-center">
                     Computer Science Engineering
@@ -105,7 +105,7 @@ const Resume = () => {
                     Rajalakshmi Institute Of Technology.
                   </p>
                 </div>
-                <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[300px] h-[170px] gap-4 ">
+                <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-3 w-[250px] h-[170px] gap-4 ">
                   <p className="font-medium text-sm">2017 - 2018</p>
                   <p className="font-bold text-xl text-center">
                     Computer Science
