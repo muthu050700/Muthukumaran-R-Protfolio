@@ -16,6 +16,7 @@ body {
   background-size: cover;
   background-position: center center center;
 }
+
 @keyframes animate {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
