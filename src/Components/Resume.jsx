@@ -1,11 +1,8 @@
 import { useState } from "react";
-import { IoLogoHtml5 } from "react-icons/io5";
-import { IoLogoCss3 } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaBootstrap } from "react-icons/fa6";
-import { IoLogoReact } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
-import ToolTip from "./ToolTip";
+import ResumeRightContent from "./ResumeRightContent";
+import ResumeExperience from "./ResumeExperience";
+import ResumeEducation from "./ResumeEducation";
+import ResumeSkills from "./ResumeSkills";
 const Resume = () => {
   const [experience, setExperience] = useState(true);
   const [education, setEducation] = useState(false);
@@ -35,122 +32,16 @@ const Resume = () => {
   return (
     <div className=" bg-zinc-900 md:h-screen md:justify-center md:items-center mt-[77px] text-white flex flex-col md:flex-row gap-10 lg:gap-12 md:px-10 container mx-auto py-20 lg:px-20">
       <div className="flex flex-col flex-1">
-        <div className="flex flex-col justify-center items-center md:items-start gap-7">
-          <h1 className="text-3xl font-bold ">Why Hire Me?</h1>
-          <p className="text-justify text-lg leading-7 px-2 md:px-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi,
-            eligendi consequatur asperiores suscipit dolores aliquid non ex
-            sapiente blanditiis quas?
-          </p>
-          <div className="flex flex-col gap-4">
-            <button
-              className="w-full bg-green-500 py-2 px-[110px] rounded-md font-medium text-lg"
-              onClick={handleExperience}
-            >
-              Experience
-            </button>
-            <button
-              className="w-full bg-green-500 py-2 px-[112px] rounded-md font-medium text-lg"
-              onClick={handleEducation}
-            >
-              Education
-            </button>
-            <button
-              className="w-full bg-green-500 py-2 px-[112px] rounded-md font-medium text-lg"
-              onClick={handleSkills}
-            >
-              Skills
-            </button>
-          </div>
-        </div>
+        <ResumeRightContent
+          handleExperience={handleExperience}
+          handleEducation={handleEducation}
+          handleSkills={handleSkills}
+        />
       </div>
       <>
-        {experience && (
-          <div className="flex flex-col justify-center items-center md:items-start gap-7 flex-1">
-            <h1 className="text-2xl font-bold ">My Experience</h1>
-            <p className="text-justify text-lg leading-7 px-2 md:px-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Laboriosam illo eveniet nostrum minus et qui dolorum optio quo
-              facere assumenda numquam aperiam, atque cum corporis. Sunt ratione
-              excepturi quam obcaecati.
-            </p>
-            <div className="flex justify-center">
-              <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 my-3 w-[250px] h-[150px] gap-4 hover:scale-105 duration-300">
-                <p className="font-medium text-sm">2022 - 2024 Present</p>
-                <p className="font-bold text-xl">Front-End Developer</p>
-                <li className="font-medium text-sm">ATOS</li>
-              </div>
-            </div>
-          </div>
-        )}
-        {education && (
-          <div className="flex flex-col justify-center items-center md:items-start gap-7 xl:flex-1">
-            <h1 className="text-3xl font-bold ">Education</h1>
-            <p className="text-justify text-lg leading-7 px-2 md:px-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Laboriosam illo eveniet nostrum minus et qui dolorum optio quo
-            </p>
-
-            <div className=" grid lg:grid-cols-2 xl:grid-cols-2 gap-5 h-[400px] md:h-[200px]  overflow-y-auto lg:hover:overflow-y-auto px-3 lg:overflow-y-hidden scrolling">
-              <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-2 w-[full]  h-[170px] lg:w-[240px] xl:w-[250px] gap-3">
-                <p className="font-medium text-sm">2023 - 2024 (6 Months)</p>
-                <p className="font-bold text-xl text-center">
-                  Front-End Developer
-                </p>
-                <p className="font-medium text-sm text-center">GUVI</p>
-              </div>
-              <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-2 w-[full] h-[170px] lg:w-[240px] xl:w-[250px] gap-3">
-                <p className="font-medium text-sm">2018 - 2022</p>
-                <p className="font-bold text-xl text-center">
-                  Computer Science Engineering
-                </p>
-                <p className="font-medium text-sm text-center">
-                  Rajalakshmi Institute Of Technology.
-                </p>
-              </div>
-              <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 px-3 my-2 w-[full] h-[170px] lg:w-[240px] xl:w-[250px] gap-3">
-                <p className="font-medium text-sm">2017 - 2018</p>
-                <p className="font-bold text-xl text-center">
-                  Computer Science
-                </p>
-                <p className="font-medium text-sm text-center">
-                  Calavala Cunnan Chetty's Hindu Matric HR.SEC.SCHOOL
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
-        {skills && (
-          <div className="flex flex-col justify-center items-center md:items-start gap-7 flex-1">
-            <h1 className="text-2xl font-bold ">Skills</h1>
-            <p className="text-justify text-lg leading-7 px-2 md:px-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Laboriosam illo eveniet nostrum minus et qui dolorum optio quo
-              facere assumenda numquam aperiam,
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-3  gap-4 lg:gap-6">
-              <ToolTip text={"HTML 5"}>
-                <IoLogoHtml5 size={50} />
-              </ToolTip>
-              <ToolTip text={"CSS"}>
-                <IoLogoCss3 size={50} />
-              </ToolTip>
-              <ToolTip text={"JavaScript"}>
-                <IoLogoJavascript size={50} />
-              </ToolTip>
-              <ToolTip text={"React"}>
-                <IoLogoReact size={50} />
-              </ToolTip>
-              <ToolTip text={"Bootstrap"}>
-                <FaBootstrap size={50} />
-              </ToolTip>
-
-              <ToolTip text={"Tailwind"}>
-                <RiTailwindCssFill size={50} />
-              </ToolTip>
-            </div>
-          </div>
-        )}
+        {experience && <ResumeExperience />}
+        {education && <ResumeEducation />}
+        {skills && <ResumeSkills />}
       </>
     </div>
   );

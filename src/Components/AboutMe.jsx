@@ -44,9 +44,13 @@ const AboutMe = () => {
         </div>
       </div>
       <div>
-        <button className=" bg-orange-700 w-36 py-2 px-4 rounded-sm">
+        <a
+          href="./assets/CV_2023051911551980.pdf"
+          download
+          className=" bg-orange-700 w-36 py-2 px-4 rounded-sm"
+        >
           Download CV
-        </button>
+        </a>
       </div>
     </div>
   );
