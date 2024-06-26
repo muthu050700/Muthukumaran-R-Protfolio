@@ -28,6 +28,12 @@ body {
   }
 }
 
+/* .image-div {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+} */
+
 .scrolling::-webkit-scrollbar {
   width: 0.5rem;
 }

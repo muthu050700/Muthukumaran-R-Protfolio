@@ -6,12 +6,16 @@ const AboutContent = () => {
     <>
       <div className="flex flex-col pl-2 pr-2 xl:flex-row lg:px-20 md:px-10 gap-5 ">
         <div>
-          <div>
-            <img
+          <div
+            className="image-div w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-lg object-fit bg-cover"
+            style={{ backgroundImage: `url(${profileImage})` }}
+          >
+            <div></div>
+            {/* <img
               src={profileImage}
               alt="img"
               className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-lg object-fit"
-            />
+            /> */}
           </div>
           <div className="xl:hidden">
             <Icons />
