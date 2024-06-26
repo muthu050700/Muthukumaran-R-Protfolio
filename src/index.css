@@ -29,6 +29,7 @@ body {
 }
 
 .image-div {
+  background-image: url(/assets/profile-img.jpeg);
   width: 250px;
   height: 250px;
   background-size: cover;

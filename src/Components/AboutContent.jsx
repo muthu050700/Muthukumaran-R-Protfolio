@@ -6,10 +6,7 @@ const AboutContent = () => {
     <>
       <div className="flex flex-col pl-2 pr-2 xl:flex-row lg:px-20 md:px-10 gap-5 ">
         <div>
-          <div
-            className="image-div "
-            style={{ backgroundImage: `url(${profileImage})` }}
-          >
+          <div className="image-div ">
             <div></div>
             {/* <img
               src={profileImage}
