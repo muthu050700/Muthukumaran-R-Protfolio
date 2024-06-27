@@ -35,7 +35,21 @@ body {
   height: 250px;
   background-size: cover;
 }
-
+.content-div {
+  /* background-image: url(./assets/todotask.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 300px;
+}
+.content-div:hover {
+  background-image: linear-gradient(
+    /* to right, */ rgba(112, 157, 255, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  ) !important;
+  transition: 5s ease;
+}
 .scrolling::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -52,4 +66,9 @@ body {
 }
 .scrolling::-webkit-scrollbar-thumb:hover {
   background-color: brown;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+  padding-top: 10px;
 }

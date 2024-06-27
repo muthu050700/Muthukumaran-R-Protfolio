@@ -30,7 +30,7 @@ const Resume = () => {
     setEducation(false);
   };
   return (
-    <div className=" bg-zinc-900 md:h-screen md:justify-center md:items-center mt-[77px] text-white flex flex-col md:flex-row gap-10 lg:gap-12 md:px-10 container mx-auto py-20 lg:px-20">
+    <div className=" bg-zinc-900 md:h-screen md:justify-center md:items-center  text-white flex flex-col md:flex-row gap-10 lg:gap-12 md:px-10 container mx-auto py-20 lg:px-20">
       <div className="flex flex-col flex-1">
         <ResumeRightContent
           handleExperience={handleExperience}
