@@ -1,9 +1,7 @@
-import React from "react";
-
 const ProjectImageContent = ({ value }) => {
-  const { image, source, demo } = value;
+  const { image, source, demo, name, used } = value;
   return (
-    <div className="shadow-lg shadow-[#3a3c3e]  hover:scale-105 duration-300 w-[350px] h-[450px] bg-slate-400 flex flex-col items-center p-2 rounded-lg">
+    <div className="shadow-lg shadow-[#3a3c3e]  hover:scale-105 duration-300 w-[340px] h-[350px] bg-slate-400 flex flex-col items-center px-1 py-2 rounded-lg">
       <div
         style={{ backgroundImage: `url(${image})` }}
         className=" group container rounded-md  content-div "
@@ -24,12 +22,9 @@ const ProjectImageContent = ({ value }) => {
           </div>
         </div>
       </div>
-      <div>
-        <p>Todo Project</p>
-        <div className="flex list-none gap-2">
-          <li>React</li>
-          <li>Tailwind</li>
-        </div>
+      <div className="flex flex-col gap-2 my-2">
+        <p className=" text-center text-xl font-bold">{name}</p>
+        <p className="font-medium text-xl">{used.join(", ")}</p>
       </div>
     </div>
   );

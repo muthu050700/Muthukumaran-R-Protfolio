@@ -1,11 +1,16 @@
 import dataForProject from "../utils.js/ProjectImage";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import ProjectImageContent from "./ProjectImageContent";
 import { BsDashLg } from "react-icons/bs";
 const Project = () => {
   const [visible, setVisible] = useState(3);
+  const ref = useRef("show more");
   const handleShowMore = () => {
-    setVisible((preValue) => preValue + 3);
+    if (ref.current.innerText !== "show more") {
+      setVisible(3);
+    } else {
+      setVisible((preValue) => preValue + 3);
+    }
   };
   return (
     <>
@@ -23,7 +28,15 @@ const Project = () => {
             );
           })}
         </div>
-        <button onClick={handleShowMore}>see more</button>
+        <button
+          onClick={handleShowMore}
+          ref={ref}
+          className=" bg-orange-500 px-4 py-2 rounded-md font-medium text-lg hover:text-black"
+        >
+          {dataForProject.length === visible || dataForProject.length > visible
+            ? "show more"
+            : "show less"}
+        </button>
       </div>
     </>
   );
