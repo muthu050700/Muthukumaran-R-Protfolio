@@ -13,19 +13,19 @@ const ResumeRightContent = ({
       </p>
       <div className="flex flex-col gap-4">
         <button
-          className="w-full bg-green-500 py-2 px-[110px] rounded-md font-medium text-lg"
+          className="w-full bg-[#CE5A67] py-2 px-[110px] hover:bg-[#C73659]  rounded-md font-medium text-lg"
           onClick={handleExperience}
         >
           Experience
         </button>
         <button
-          className="w-full bg-green-500 py-2 px-[112px] rounded-md font-medium text-lg"
+          className="w-full bg-[#CE5A67] py-2 px-[112px] hover:bg-[#C73659]  rounded-md font-medium text-lg"
           onClick={handleEducation}
         >
           Education
         </button>
         <button
-          className="w-full bg-green-500 py-2 px-[112px] rounded-md font-medium text-lg"
+          className="w-full bg-[#CE5A67] py-2 px-[112px] hover:bg-[#C73659]  rounded-md font-medium text-lg"
           onClick={handleSkills}
         >
           Skills

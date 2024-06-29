@@ -3,7 +3,8 @@ import ResumeRightContent from "./ResumeRightContent";
 import ResumeExperience from "./ResumeExperience";
 import ResumeEducation from "./ResumeEducation";
 import ResumeSkills from "./ResumeSkills";
-const Resume = () => {
+import DarkMode from "./DarkMode";
+const Resume = ({ handleDarkMode, theme }) => {
   const [experience, setExperience] = useState(true);
   const [education, setEducation] = useState(false);
   const [skills, setSkills] = useState(false);
@@ -30,19 +31,29 @@ const Resume = () => {
     setEducation(false);
   };
   return (
-    <div className=" bg-zinc-900 md:h-screen md:justify-center md:items-center  text-white flex flex-col md:flex-row gap-10 lg:gap-12 md:px-10 container mx-auto py-20 lg:px-20">
-      <div className="flex flex-col flex-1">
-        <ResumeRightContent
-          handleExperience={handleExperience}
-          handleEducation={handleEducation}
-          handleSkills={handleSkills}
-        />
+    <div className={theme ? "dark" : " light"}>
+      <div className=" dark:bg-neutral-900  md:h-screen lg:gap-12 md:px-10 container mx-auto py-20 lg:px-32">
+        <div className="text-center pt-20 pb-10">
+          <p className="font-bold pb-4  text-4xl md:text-4xl lg:text-5xl dark:text-white tracking-wide">
+            Resume
+          </p>
+        </div>
+        <div className=" md:justify-center md:items-center dark:text-white flex flex-col md:flex-row gap-10 ">
+          <div className="flex flex-col flex-1">
+            <ResumeRightContent
+              handleExperience={handleExperience}
+              handleEducation={handleEducation}
+              handleSkills={handleSkills}
+            />
+          </div>
+          <>
+            {experience && <ResumeExperience />}
+            {education && <ResumeEducation />}
+            {skills && <ResumeSkills />}
+          </>
+        </div>
+        <DarkMode handleDarkMode={handleDarkMode} theme={theme} />
       </div>
-      <>
-        {experience && <ResumeExperience />}
-        {education && <ResumeEducation />}
-        {skills && <ResumeSkills />}
-      </>
     </div>
   );
 };

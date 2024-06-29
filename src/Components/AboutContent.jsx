@@ -1,6 +1,6 @@
 import AboutMe from "./AboutMe";
 import Icons from "./Icons";
-import { profileImage } from "../utils.js/image";
+
 const AboutContent = () => {
   return (
     <>

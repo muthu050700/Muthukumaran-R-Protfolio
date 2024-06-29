@@ -8,8 +8,8 @@ const ResumeExperience = () => {
         numquam aperiam, atque cum corporis. Sunt ratione excepturi quam
         obcaecati.
       </p>
-      <div className="flex justify-center">
-        <div className="flex flex-col justify-center items-center shadow-md shadow-slate-100 py-4 my-3 w-[250px] h-[150px] gap-4 hover:scale-105 duration-300">
+      <div className="flex justify-center ">
+        <div className="relative flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659]  cursor-pointer py-4  w-[250px] h-[150px] gap-4 hover:scale-105 duration-300">
           <p className="font-medium text-sm">2022 - 2024 Present</p>
           <p className="font-bold text-xl">Front-End Developer</p>
           <li className="font-medium text-sm">ATOS</li>

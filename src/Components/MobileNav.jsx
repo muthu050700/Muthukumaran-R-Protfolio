@@ -6,12 +6,12 @@ const MobileNav = (props) => {
       <div
         className={
           showNav
-            ? "fixed left-0 top-0 sm:w-[50%] w-[100%] h-full bg-black ease-in-out duration-200 md:hidden z-10"
-            : "fixed left-[-100%] top-0  h-full bg-black ease-in-out duration-200 md:hidden"
+            ? "fixed left-0 top-0 sm:w-[50%] w-[100%] h-full dark:bg-neutral-900 bg-[#CE5A67] ease-in-out duration-300 md:hidden z-10"
+            : "fixed left-[-100%] top-0  h-full dark:bg-neutral-900 bg-[#CE5A67] ease-in-out duration-300 md:hidden"
         }
       >
         <div className="flex justify-between">
-          <h1 className="font-bold text-white mt-8 pl-4 text-xl">
+          <h1 className="font-bold text-white mt-6 pl-2 text-xl">
             Muthukumaran.
           </h1>
         </div>

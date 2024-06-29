@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-const NavLinks = ({ pathname, desktop, showNav, handleNav }) => {
+const NavLinks = ({ pathname, desktop, showNav, handleNav, color }) => {
   return (
     <div>
       <ul
         className={`${
           desktop
             ? "md:flex gap-8 hidden mr-2 "
-            : "pt-12 gap-8 uppercase p-4 text-white flex flex-col items-center"
+            : "pt-12 gap-10 uppercase p-4 dark:text-white text-white flex flex-col items-center"
         }`}
       >
         <li>
@@ -14,8 +14,12 @@ const NavLinks = ({ pathname, desktop, showNav, handleNav }) => {
             to={"/"}
             className={`${
               pathname === "/" &&
-              "font-bold text-orange-700 border-b-2 border-green-600"
-            } hover:text-red-700 transition-all`}
+              `text-[#151515]  ${
+                color
+                  ? "dark:text-black text-white "
+                  : "dark:text-[#C73659] dark:border-white "
+              } border-b-[3px] border-[#A91D3A] `
+            } hover:text-[#A91D3A] transition-all text-lg font-bold `}
             onClick={handleNav}
           >
             Home
@@ -26,8 +30,12 @@ const NavLinks = ({ pathname, desktop, showNav, handleNav }) => {
             to={"/about"}
             className={`${
               pathname === "/about" &&
-              "font-bold text-orange-700 border-b-2 border-green-600"
-            } hover:text-red-700 transition-all`}
+              `text-[#151515]  ${
+                color
+                  ? "dark:text-black text-white "
+                  : "dark:text-[#C73659] dark:border-white "
+              } border-b-[3px] border-[#A91D3A] `
+            } hover:text-[#A91D3A] transition-all  text-lg font-bold`}
             onClick={handleNav}
           >
             About
@@ -38,8 +46,12 @@ const NavLinks = ({ pathname, desktop, showNav, handleNav }) => {
             to={"/resume"}
             className={`${
               pathname === "/resume" &&
-              "font-bold text-orange-700 border-b-2 border-green-600"
-            } hover:text-red-700 transition-all`}
+              `text-[#151515]  ${
+                color
+                  ? "dark:text-black text-white "
+                  : "dark:text-[#C73659] dark:border-white "
+              } border-b-[3px] border-[#A91D3A] `
+            } hover:text-[#A91D3A] transition-all  text-lg font-bold`}
             onClick={handleNav}
           >
             Resume
@@ -50,8 +62,12 @@ const NavLinks = ({ pathname, desktop, showNav, handleNav }) => {
             to={"/project"}
             className={`${
               pathname === "/project" &&
-              "font-bold text-orange-700 border-b-2 border-green-600"
-            } hover:text-red-700 transition-all`}
+              `text-[#151515]  ${
+                color
+                  ? "dark:text-black text-white "
+                  : "dark:text-[#C73659] dark:border-white "
+              } border-b-[3px] border-[#A91D3A] `
+            } hover:text-[#A91D3A] transition-all  text-lg font-bold`}
             onClick={handleNav}
           >
             Project
@@ -62,8 +78,12 @@ const NavLinks = ({ pathname, desktop, showNav, handleNav }) => {
             to={"/contact"}
             className={`${
               pathname === "/contact" &&
-              "font-bold text-orange-700 border-b-2 border-green-600"
-            } hover:text-red-700 transition-all`}
+              `text-[#151515]  ${
+                color
+                  ? "dark:text-black text-white "
+                  : "dark:text-[#C73659] dark:border-white "
+              } border-b-[3px] border-[#A91D3A] `
+            } hover:text-[#A91D3A] transition-all  text-lg font-bold`}
             onClick={handleNav}
           >
             Contact

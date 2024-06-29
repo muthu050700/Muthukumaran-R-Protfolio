@@ -5,32 +5,37 @@ import Contact from "./Components/Contact";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Components/Home";
 import Project from "./Components/Project";
+import { useState } from "react";
 
 function App() {
+  const [theme, setTheme] = useState(true);
+  const handleDarkMode = () => {
+    setTheme(!theme);
+  };
   const appRouter = createBrowserRouter([
     {
       path: "/",
-      element: <Body />,
+      element: <Body theme={theme} />,
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: <Home handleDarkMode={handleDarkMode} theme={theme} />,
         },
         {
           path: "/about",
-          element: <About />,
+          element: <About handleDarkMode={handleDarkMode} theme={theme} />,
         },
         {
           path: "/resume",
-          element: <Resume />,
+          element: <Resume handleDarkMode={handleDarkMode} theme={theme} />,
         },
         {
           path: "/project",
-          element: <Project />,
+          element: <Project handleDarkMode={handleDarkMode} theme={theme} />,
         },
         {
           path: "/contact",
-          element: <Contact />,
+          element: <Contact handleDarkMode={handleDarkMode} theme={theme} />,
         },
       ],
     },

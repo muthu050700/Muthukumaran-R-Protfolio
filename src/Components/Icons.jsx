@@ -1,16 +1,26 @@
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import SocialIcons from "./SocialIcons";
-const Icons = () => {
+const Icons = ({ contact }) => {
   return (
     <>
-      <div className="flex gap-4 m-4 w-full mx-auto xl:px-20">
+      <div
+        className={
+          contact
+            ? `flex gap-4 m-4 w-full mx-auto xl:px-0`
+            : `flex gap-4 m-4 w-full mx-auto xl:px-20`
+        }
+      >
         <SocialIcons text={"LinkedIn"}>
-          <CiLinkedin size={30} className=" cursor-pointer " />
+          <a href="https://www.linkedin.com/feed/" target="blank">
+            <CiLinkedin size={30} className=" cursor-pointer " />
+          </a>
         </SocialIcons>
 
         <SocialIcons text={"Github"}>
-          <FaGithub size={30} className=" cursor-pointer " />
+          <a href="https://github.com/" target="blank">
+            <FaGithub size={30} className=" cursor-pointer " />
+          </a>
         </SocialIcons>
       </div>
     </>

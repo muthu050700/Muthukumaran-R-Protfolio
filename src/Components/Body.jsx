@@ -1,17 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
-import Home from "./Home";
-import About from "./About";
-import Resume from "./Resume";
-const Body = () => {
+import { useState } from "react";
+const Body = ({ theme }) => {
   return (
-    <>
-      <Header />
+    <div className={`${theme ? " bg-neutral-900" : " bg-white"}`}>
+      <Header theme={theme} />
       {/* <Home />
       <About />
       <Resume /> */}
-      <Outlet />
-    </>
+      <Outlet dark={"dark"} />
+    </div>
   );
 };
 export default Body;
