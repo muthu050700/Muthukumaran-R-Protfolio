@@ -4,6 +4,7 @@ import { MdClose } from "react-icons/md";
 import { useLocation } from "react-router-dom";
 import MobileNav from "./MobileNav";
 import NavLinks from "./NavLinks";
+import { Link } from "react-router-dom";
 const Header = ({ theme }) => {
   const [showNav, setShowNav] = useState(false);
   const handleNav = () => {
@@ -33,18 +34,20 @@ const Header = ({ theme }) => {
         >
           {/* Desktop Navbar */}
           <div className="h-24 flex justify-between items-center w-full  mx-auto">
-            <h1 className="font-bold text-xl md:text-2xl ml-2 md:ml-0">
-              Muthu
-              <span
-                className={`${
-                  color
-                    ? " text-white dark:text-black"
-                    : " text-black dark:text-white"
-                }`}
-              >
-                kumaran.
-              </span>
-            </h1>
+            <Link to={"/"}>
+              <h1 className="font-bold text-xl md:text-2xl ml-2 md:ml-0">
+                Muthu
+                <span
+                  className={`${
+                    color
+                      ? " text-white dark:text-black"
+                      : " text-black dark:text-white"
+                  }`}
+                >
+                  kumaran R
+                </span>
+              </h1>
+            </Link>
             {/* NavLinks */}
             <NavLinks pathname={pathname} desktop={true} color={color} />
           </div>
