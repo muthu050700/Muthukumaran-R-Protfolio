@@ -38,12 +38,13 @@ const Home = ({ handleDarkMode, theme }) => {
           </div>
           <div className="flex flex-col gap-7 mt-2  md:flex-row md:gap-4 text-lg font-medium text-white">
             <div>
-              <button
-                onClick={window.open("./assets/CV_2023051911551980.pdf")}
+              <a
+                href="./assets/CV_2023051911551980.pdf"
+                download
                 className=" bg-[#CE5A67] hover:bg-[#C73659] w-36 py-2 px-4 rounded-sm  "
               >
                 Download CV
-              </button>
+              </a>
             </div>
             <div>
               <Link
