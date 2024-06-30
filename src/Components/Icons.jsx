@@ -12,13 +12,19 @@ const Icons = ({ contact }) => {
         }
       >
         <SocialIcons text={"LinkedIn"}>
-          <a href="https://www.linkedin.com/feed/" target="blank">
+          <a
+            href="https://www.linkedin.com/in/muthukumaran0519/"
+            target="blank"
+          >
             <CiLinkedin size={30} className=" cursor-pointer " />
           </a>
         </SocialIcons>
 
         <SocialIcons text={"Github"}>
-          <a href="https://github.com/" target="blank">
+          <a
+            href="https://github.com/muthu050700?tab=repositories"
+            target="blank"
+          >
             <FaGithub size={30} className=" cursor-pointer " />
           </a>
         </SocialIcons>
