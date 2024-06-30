@@ -13,7 +13,7 @@ const dataForProject = [
     demo: "https://unique-cat-a6938a.netlify.app/",
     source: "https://github.com/muthu050700/React-Guvi-Task-2",
   },
-  {../localimage/
+  {
     name: "Student Calculator App",
     used: ["HTML", "CSS", "Javascript"],
     image: "../localimage/project-3.png",
