@@ -2,7 +2,7 @@ import React from "react";
 
 const DarkMode = ({ handleDarkMode, theme }) => {
   return (
-    <div className="fixed bottom-0  right-0 ">
+    <div className="fixed bottom-0  right-0  animate__slow animate__animated animate__bounce animate__delay-1s animate__infinite">
       <button
         onClick={() => {
           handleDarkMode();

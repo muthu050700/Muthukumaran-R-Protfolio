@@ -1,10 +1,14 @@
 import ContactDetails from "./ContactDetails";
 import ContactForm from "./ContactForm";
 import DarkMode from "./DarkMode";
-
+import { motion } from "framer-motion";
 const Contact = ({ handleDarkMode, theme }) => {
   return (
-    <div className={theme ? "dark" : " light"}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.8 } }}
+      className={theme ? "dark" : " light"}
+    >
       <div className="dark:bg-neutral-900   lg:gap-12 md:px-10 container mx-auto py-20  lg:px-18 ">
         <div className="text-center pt-20 pb-10">
           <p className="font-bold pb-4  text-4xl md:text-4xl lg:text-5xl dark:text-white tracking-wide ">
@@ -20,7 +24,7 @@ const Contact = ({ handleDarkMode, theme }) => {
         </div>
         <DarkMode handleDarkMode={handleDarkMode} theme={theme} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -35,13 +35,17 @@ const Header = ({ theme }) => {
           {/* Desktop Navbar */}
           <div className="h-24 flex justify-between items-center w-full  mx-auto">
             <Link to={"/"}>
-              <h1 className="font-bold text-xl md:text-2xl ml-2 md:ml-0">
+              <h1
+                className={`font-medium text-xl md:text-2xl lg:text-3xl ml-2 md:ml-0 logo  tracking-wider ${
+                  color ? " dark:text-white" : "text-[#A91D3A] "
+                }`}
+              >
                 Muthu
                 <span
                   className={`${
                     color
-                      ? " text-white dark:text-black"
-                      : " text-black dark:text-white"
+                      ? " text-white dark:text-black logo  tracking-wider"
+                      : " text-black dark:text-white  logo  tracking-wider"
                   }`}
                 >
                   kumaran R

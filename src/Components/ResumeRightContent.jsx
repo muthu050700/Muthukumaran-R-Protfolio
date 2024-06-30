@@ -7,9 +7,10 @@ const ResumeRightContent = ({
     <div className="flex flex-col justify-center items-center md:items-start gap-7">
       <h1 className="text-3xl font-bold ">Why Hire Me?</h1>
       <p className="text-justify text-lg leading-7 px-2 md:px-0">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi,
-        eligendi consequatur asperiores suscipit dolores aliquid non ex sapiente
-        blanditiis quas?
+        As a front-end developer with 2 years of experience,I specialize in
+        modern web technologies and creating user-friendly designs. My
+        dedication to continuous learning and innovative problem-solving ensures
+        exceptional results for the team.
       </p>
       <div className="flex flex-col gap-4">
         <button

@@ -1,6 +1,6 @@
 const ToolTip = ({ children, text }) => {
   return (
-    <div className=" group relative inline-block">
+    <div className=" group relative inline-block hover:scale-105 duration-300">
       <div className=" flex justify-center items-center ">
         <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition absolute  bg-[#C73659] text-[neutral-900] rounded-sm py-1 px-3 text-sm whitespace-nowrap top-[-30px] text-center">
           {text}

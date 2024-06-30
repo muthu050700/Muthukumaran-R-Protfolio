@@ -2,6 +2,7 @@ import dataForProject from "../utils.js/ProjectImage";
 import { useState, useRef } from "react";
 import ProjectImageContent from "./ProjectImageContent";
 import DarkMode from "./DarkMode";
+import { motion } from "framer-motion";
 const Project = ({ handleDarkMode, theme }) => {
   const [visible, setVisible] = useState(3);
   const ref = useRef("show more");
@@ -13,7 +14,11 @@ const Project = ({ handleDarkMode, theme }) => {
     }
   };
   return (
-    <div className={theme ? "dark" : " light"}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.8 } }}
+      className={theme ? "dark" : " light"}
+    >
       <div className=" dark:bg-neutral-900  md:justify-center md:items-center  flex flex-col  gap-10 lg:gap-12 md:px-10 container mx-auto py-20 lg:px-20">
         <div className="text-center pt-20  ">
           <p className="font-bold text-4xl md:text-4xl lg:text-5xl  tracking-wide pb-4 dark:text-white ">
@@ -46,7 +51,7 @@ const Project = ({ handleDarkMode, theme }) => {
         </div>
         <DarkMode handleDarkMode={handleDarkMode} theme={theme} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

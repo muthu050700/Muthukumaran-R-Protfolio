@@ -21,22 +21,22 @@ const AboutMe = () => {
         portfolio showcases a variety of projects that demonstrate my ability to
         deliver responsive and dynamic web applications.
       </p>
-      <div className="flex flex-wrap justify-between">
-        <div className="relative mb-2">
+      <div className="flex flex-wrap justify-between ">
+        <div className=" mb-2">
           {/* <div className=" absolute bg-black blur-sm -inset-0.3 border border-black w-28 h-16  rounded-sm  "></div> */}
-          <div className=" relative flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659] cursor-pointer w-28 h-16 rounded-sm">
+          <div className=" relative flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659] cursor-pointer w-28 h-16 rounded-sm hover:scale-105 duration-300">
             <p className="font-bold text-lg">Experience</p>
             <p className="font-bold text-sm">2 years</p>
           </div>
         </div>
-        <div className="relative mb-2">
-          <div className=" relative flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659] cursor-pointer w-28 h-16 rounded-sm">
+        <div className=" mb-2">
+          <div className="  flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659] cursor-pointer w-28 h-16 rounded-sm hover:scale-105 duration-300">
             <p className="font-bold text-lg">Projects</p>
             <p className="font-bold text-sm">3 Projects</p>
           </div>
         </div>
-        <div className="relative mb-2">
-          <div className=" relative flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659]  cursor-pointer  w-28 h-16 rounded-sm">
+        <div className=" mb-2">
+          <div className="  flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659]  cursor-pointer  w-28 h-16 rounded-sm hover:scale-105 duration-300">
             <p className="font-bold text-lg">Language</p>
             <p className="font-bold text-sm">English</p>
           </div>

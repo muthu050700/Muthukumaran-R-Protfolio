@@ -6,7 +6,7 @@ const ContactDetails = () => {
   return (
     <div className="flex flex-col flex-1 gap-4">
       <p className="text-2xl lg:text-3xl font-bold  tracking-wide">
-        React out to me!
+        React to me!
       </p>
       <p className="text-lg lg:text-xl text-justify  leading-7 font-medium">
         Discuss a Project or just want to say Hi? My inbox is open for all.

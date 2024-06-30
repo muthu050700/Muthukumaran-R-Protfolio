@@ -8,12 +8,14 @@ import ToolTip from "./ToolTip";
 
 const ResumeSkills = () => {
   return (
-    <div className="flex flex-col justify-center items-center md:items-start gap-7 flex-1">
+    <div className="flex flex-col justify-center items-center md:items-start gap-7 flex-1 ">
       <h1 className="text-2xl font-bold ">Skills</h1>
       <p className="text-justify text-lg leading-7 px-2 md:px-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-        illo eveniet nostrum minus et qui dolorum optio quo facere assumenda
-        numquam aperiam,
+        I specialize in front-end development with expertise in HTML, CSS,
+        JavaScript, React, Tailwind CSS, and Bootstrap. I create responsive,
+        visually engaging web interfaces with efficient Git version control,
+        focusing on user experience and modern design standards to meet project
+        requirements.
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3  gap-4 lg:gap-6">
         <ToolTip text={"HTML 5"}>
