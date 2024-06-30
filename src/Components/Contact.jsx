@@ -10,7 +10,7 @@ const Contact = ({ handleDarkMode, theme }) => {
       animate={{ opacity: 1, transition: { duration: 0.8 } }}
       className={theme ? "dark" : " light"}
     >
-      <div className="dark:bg-neutral-900   lg:gap-12 md:px-10 container mx-auto py-20  lg:px-18 ">
+      <div className="dark:bg-neutral-900   lg:gap-12 md:px-10 container mx-auto pt-20 pb-10  lg:px-18 ">
         <div className="text-center pt-20 pb-10">
           <p className="font-bold pb-4  text-4xl md:text-4xl lg:text-5xl dark:text-white tracking-wide ">
             Contact Me

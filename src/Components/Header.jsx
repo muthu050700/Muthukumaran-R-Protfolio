@@ -74,6 +74,7 @@ const Header = ({ theme }) => {
             handleNav={handleNav}
             showNav={showNav}
             pathname={pathname}
+            color={color}
           />
         </div>
       </div>

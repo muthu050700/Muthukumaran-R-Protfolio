@@ -13,13 +13,13 @@ const Home = ({ handleDarkMode, theme }) => {
       <div className=" text-[#151515]  py-32 md:py-24  lg:py-44 xl:py-48 container mx-auto flex flex-col justify-center gap-10 lg:flex-row md:items-center dark:bg-neutral-900 lg:px-10 ">
         {/* Left side content */}
         <div className="flex flex-col  ml-2 gap-4 lg:flex-1 lg:gap-5  lg:pl-20">
-          <p className="font-bold text-xl md:text-3xl lg:text-4xl dark:text-white md:pt-20 lg:pt-0">
+          <div className="font-bold text-xl md:text-3xl lg:text-4xl dark:text-white md:pt-20 lg:pt-0">
             Hello{" "}
             <p className="  animate__slow animate__animated animate__wobble animate__delay-2s animate__infinite inline-block">
               👋
             </p>{" "}
             I'm
-          </p>
+          </div>
           <p className="font-bold text-4xl md:text-5xl xl:text-6xl dark:text-white">
             Muthukumaran R
           </p>

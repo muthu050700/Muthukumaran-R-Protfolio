@@ -1,6 +1,7 @@
 import NavLinks from "./NavLinks";
+import { Link } from "react-scroll";
 const MobileNav = (props) => {
-  const { handleNav, showNav, pathname } = props;
+  const { handleNav, showNav, pathname, color } = props;
   return (
     <>
       <div
@@ -11,9 +12,24 @@ const MobileNav = (props) => {
         }
       >
         <div className="flex justify-between">
-          <h1 className="font-bold text-white mt-6 pl-2 text-xl">
-            Muthukumaran.
-          </h1>
+          <Link to={"/"}>
+            <h1
+              className={`font-medium text-xl md:text-2xl lg:text-3xl ml-2 mt-6 md:ml-0 logo  tracking-wider ${
+                color ? " dark:text-white" : "text-[#A91D3A] "
+              }`}
+            >
+              Muthu
+              <span
+                className={`${
+                  color
+                    ? " text-white dark:text-black logo  tracking-wider"
+                    : " text-black dark:text-white  logo  tracking-wider"
+                }`}
+              >
+                kumaran R
+              </span>
+            </h1>
+          </Link>
         </div>
         {/* NavLinks */}
         <NavLinks
