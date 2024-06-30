@@ -2,7 +2,7 @@ const dataForProject = [
   {
     name: "Todo App",
     used: ["React js", "Vite", "Tailwind CSS"],
-    image: "./public/vite.svg",
+    image: "/vite.svg",
     demo: "https://symphonious-crepe-1a9a89.netlify.app/",
     source: "https://github.com/muthu050700/React-Project-3",
   },
