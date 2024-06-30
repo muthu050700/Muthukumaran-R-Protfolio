@@ -30,7 +30,7 @@ const Home = ({ handleDarkMode, theme }) => {
                 <ReactTyped
                   className="pl-[5px] dark:text-[#A91D3A] text-[#A91D3A]"
                   strings={["Front-end Developer.", "React Js Developer."]}
-                  typeSpeed={40}
+                  typeSpeed={80}
                   backSpeed={50}
                   loop
                 />

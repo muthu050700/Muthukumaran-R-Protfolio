@@ -8,7 +8,7 @@ const AboutMe = () => {
         <ReactTyped
           className="pl-2 dark:text-[#A91D3A] text-[#A91D3A]"
           strings={["Front-end Developer.", "React Js Developer."]}
-          typeSpeed={40}
+          typeSpeed={80}
           backSpeed={50}
           loop
         />
