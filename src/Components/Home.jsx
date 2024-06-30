@@ -2,6 +2,7 @@ import { ReactTyped } from "react-typed";
 import DarkMode from "./DarkMode";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { resume } from "../utils.js/image";
 const Home = ({ handleDarkMode, theme }) => {
   return (
     <motion.div
@@ -39,8 +40,8 @@ const Home = ({ handleDarkMode, theme }) => {
           <div className="flex flex-col gap-7 mt-2  md:flex-row md:gap-4 text-lg font-medium text-white">
             <div>
               <a
-                href="./assets/CV_2023051911551980.pdf"
-                download
+                href={resume}
+                download="CV_2023051911551980.pdf"
                 className=" bg-[#CE5A67] hover:bg-[#C73659] w-36 py-2 px-4 rounded-sm  "
               >
                 Download CV

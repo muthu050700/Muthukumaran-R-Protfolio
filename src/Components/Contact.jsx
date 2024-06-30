@@ -2,6 +2,7 @@ import ContactDetails from "./ContactDetails";
 import ContactForm from "./ContactForm";
 import DarkMode from "./DarkMode";
 import { motion } from "framer-motion";
+
 const Contact = ({ handleDarkMode, theme }) => {
   return (
     <motion.div
