@@ -11,7 +11,7 @@
   font-family: "Pacifico", cursive;
 }
 .blob {
-  background-image: url("/src/localimage/profile-img.jpeg");
+  background-image: url("/public/profile-img.jpeg");
   /* box-shadow: inset 0 0 0 9px rgb(255 255 255 /30%); */
   box-shadow: inset 0 0 0 8px rgb(224, 116, 142);
   order: 1;
@@ -36,7 +36,7 @@
 }
 
 .image-div {
-  background-image: url("/src/localimage/profile-img.jpeg");
+  background-image: url("/public/profile-img.jpeg");
   width: 250px;
   height: 250px;
   background-size: cover;
