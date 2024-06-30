@@ -43,7 +43,7 @@ const Resume = ({ handleDarkMode, theme }) => {
             Resume
           </p>
         </div>
-        <div className=" md:justify-center md:items-center dark:text-white flex flex-col md:flex-row gap-10 pb-20 md:pb-20">
+        <div className=" md:justify-center md:items-center dark:text-white flex flex-col md:flex-row md:gap-10 lg:gap-14 pb-20 md:pb-20">
           <div className="flex flex-col flex-1">
             <ResumeRightContent
               handleExperience={handleExperience}

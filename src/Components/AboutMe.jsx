@@ -1,5 +1,6 @@
 import { ReactTyped } from "react-typed";
 import { resume } from "../utils.js/image";
+import { Link } from "react-router-dom";
 const AboutMe = () => {
   return (
     <div className="flex flex-col justify-center gap-5 xl:ml-10">
@@ -22,19 +23,23 @@ const AboutMe = () => {
         deliver responsive and dynamic web applications.
       </p>
       <div className="flex flex-wrap justify-between ">
-        <div className=" mb-2">
-          {/* <div className=" absolute bg-black blur-sm -inset-0.3 border border-black w-28 h-16  rounded-sm  "></div> */}
-          <div className=" relative flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659] cursor-pointer w-28 h-16 rounded-sm hover:scale-105 duration-300">
-            <p className="font-bold text-lg">Experience</p>
-            <p className="font-bold text-sm">2 years</p>
+        <Link to={"/resume"}>
+          <div className=" mb-2">
+            {/* <div className=" absolute bg-black blur-sm -inset-0.3 border border-black w-28 h-16  rounded-sm  "></div> */}
+            <div className=" relative flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659] cursor-pointer w-28 h-16 rounded-sm hover:scale-105 duration-300">
+              <p className="font-bold text-lg">Experience</p>
+              <p className="font-bold text-sm">2 years</p>
+            </div>
           </div>
-        </div>
-        <div className=" mb-2">
-          <div className="  flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659] cursor-pointer w-28 h-16 rounded-sm hover:scale-105 duration-300">
-            <p className="font-bold text-lg">Projects</p>
-            <p className="font-bold text-sm">3 Projects</p>
+        </Link>
+        <Link to={"/project"}>
+          <div className=" mb-2">
+            <div className="  flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659] cursor-pointer w-28 h-16 rounded-sm hover:scale-105 duration-300">
+              <p className="font-bold text-lg">Projects</p>
+              <p className="font-bold text-sm">5 Projects</p>
+            </div>
           </div>
-        </div>
+        </Link>
         <div className=" mb-2">
           <div className="  flex flex-col justify-center shadow-md shadow-black  items-center bg-neutral-900 text-[#C73659]  cursor-pointer  w-28 h-16 rounded-sm hover:scale-105 duration-300">
             <p className="font-bold text-lg">Language</p>
