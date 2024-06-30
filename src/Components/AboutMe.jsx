@@ -1,5 +1,5 @@
 import { ReactTyped } from "react-typed";
-
+import { resume } from "../utils.js/image";
 const AboutMe = () => {
   return (
     <div className="flex flex-col justify-center gap-5 xl:ml-10">
@@ -44,8 +44,8 @@ const AboutMe = () => {
       </div>
       <div>
         <a
-          href="./assets/CV_2023051911551980.pdf"
-          download
+          href={resume}
+          download="CV_2023051911551980.pdf"
           className=" text-lg  font-medium text-white bg-[#CE5A67] hover:bg-[#C73659] w-36 py-2 px-4 rounded-sm"
         >
           Download CV
