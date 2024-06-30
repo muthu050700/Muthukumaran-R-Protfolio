@@ -1,8 +1,12 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 const ResumeEducation = () => {
   return (
-    <div className="flex flex-col justify-center items-center md:items-start gap-7 xl:flex-1">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      className="flex flex-col justify-center items-center md:items-start gap-7 xl:flex-1"
+    >
       <h1 className="text-3xl font-bold ">Education</h1>
       <p className="text-justify text-lg leading-7 px-2 md:px-0">
         I am currently enhancing my front-end development skills through a
@@ -32,7 +36,7 @@ const ResumeEducation = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
 const ResumeExperience = () => {
   return (
-    <div className="flex flex-col justify-center items-center md:items-start gap-7 flex-1">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      className="flex flex-col justify-center items-center md:items-start gap-7 flex-1"
+    >
       <h1 className="text-2xl font-bold ">My Experience</h1>
       <p className="text-justify text-lg leading-7 px-2 md:px-0">
         I have accrued 2 years of experience as a System Engineer at Atos,
@@ -15,7 +20,7 @@ const ResumeExperience = () => {
           <li className="font-medium text-sm">ATOS</li>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

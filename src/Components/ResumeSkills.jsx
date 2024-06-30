@@ -5,10 +5,14 @@ import { FaBootstrap } from "react-icons/fa6";
 import { IoLogoReact } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import ToolTip from "./ToolTip";
-
+import { motion } from "framer-motion";
 const ResumeSkills = () => {
   return (
-    <div className="flex flex-col justify-center items-center md:items-start gap-7 flex-1 ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      className="flex flex-col justify-center items-center md:items-start gap-7 flex-1 "
+    >
       <h1 className="text-2xl font-bold ">Skills</h1>
       <p className="text-justify text-lg leading-7 px-2 md:px-0">
         I specialize in front-end development with expertise in HTML, CSS,
@@ -37,7 +41,7 @@ const ResumeSkills = () => {
           <RiTailwindCssFill size={50} />
         </ToolTip>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
