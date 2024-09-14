@@ -18,7 +18,7 @@ const Footer = ({ theme }) => {
             Muthukumaran
           </a>{" "}
           | <span>{<FaRegCopyright className=" inline-block" />} </span>{" "}
-          <span id="year">2024</span> All rights reserved{" "}
+          <span id="year">2024</span>
         </span>
       </div>
     </motion.div>
